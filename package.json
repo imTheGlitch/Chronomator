@@ -1,0 +1,20 @@
+{
+  "name": "@amacra/chronomator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AmacrA effort tracking: seconds a person spent working on a record, by channel, reported by the app the work happened in. The shared, framework-free client tracker (src/effort-tracker.mjs) is consumed by apps the way @amacra/documator/editor is.",
+  "files": [
+    "src/effort-tracker.mjs",
+    "src/effort-tracker.d.mts"
+  ],
+  "exports": {
+    "./tracker": { "types": "./src/effort-tracker.d.mts", "default": "./src/effort-tracker.mjs" }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
